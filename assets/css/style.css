@@ -24,7 +24,8 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+/* change header div elements to nav elements to match html */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +33,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -195,6 +196,7 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/* change h2 element to match strong element */
+.footer strong {
     font-size: 20px;
 }
