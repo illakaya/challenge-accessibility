@@ -8,24 +8,25 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* remove class from header as header is already enough information */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
 
 /* change header div elements to nav elements to match html */
-.header nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,11 +34,11 @@ body {
     font-size: 20px;
 }
 
-.header nav ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -55,9 +56,8 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    /* remove background image, background size and background position as we changed the element from div to img and replace the properties with object-fit after conducting some online research */
+    object-fit: cover;
 }
 
 .float-left {
@@ -70,13 +70,15 @@ p {
     margin-left: 25px;
 }
 
-.content {
+/* changed .content to main */
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* changed .benefits to aside */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -87,55 +89,26 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* classes benefit-lead, brand and cost all have the same properties, so condense into a single block of CSS code for each of the general paragraph, h3 and img */
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* benefit-lead */
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* adjusted . to # for search-engine-optimization according to HTML change and grouped the blocks together */
+#search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -144,7 +117,17 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
+#search-engine-optimization img {
+    max-height: 200px;
+}
+
+#search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* adjusted . to # for online-reputation-management according to HTML change and grouped the blocks together */
+#online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -153,7 +136,17 @@ p {
     color: #ffffff;
 }
 
-.social-media-marketing {
+#online-reputation-management img {
+    max-height: 200px;
+}
+
+#online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* adjusted . to # for social-media-marketing according to HTML change and grouped the blocks together */
+#social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -162,41 +155,24 @@ p {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
+#social-media-marketing img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+#social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* remove class selector from footer */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-/* change h2 element to match strong element */
-.footer strong {
+/* change h2 element to match strong element in html file */
+footer strong {
     font-size: 20px;
 }
