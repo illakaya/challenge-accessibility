@@ -17,7 +17,7 @@ No extra installations are required.
 
 ## Usage
 
-No special instructions are needed to use the application.
+No special instructions are needed to use the application. <br>
 Link to website: https://illakaya.github.io/01-challenge-accessibility/
 
 ## Credits
