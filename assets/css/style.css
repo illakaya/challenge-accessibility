@@ -8,9 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
-/* Header style */
-/* remove class from header as header is already enough information */
-header {
+header { /* Header style - remove class from header as header is already enough information */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -26,8 +24,7 @@ header h1 .seo {
     color: #d9dcd6;
 }
 
-/* change header div elements to nav elements to match html */
-header nav {
+header nav { /* change header div elements to nav elements to match html */
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -49,29 +46,20 @@ a {
     text-decoration: none;
 }
 
-/* Image style */
-.hero {
+.hero { /* Image style - remove background image, background size and background position as we changed the element from div to img and replace the properties with object-fit after conducting some online research */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    /* remove background image, background size and background position as we changed the element from div to img and replace the properties with object-fit after conducting some online research */
     object-fit: cover;
 }
 
-/* Main content style */
-/* changed .content to main */
-main {
+main { /* Main content style - changed .content to main */
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* Each section style */
-/* adjusted . to # for search-engine-optimization according to HTML change and grouped the blocks together */
-/* adjusted . to # for online-reputation-management according to HTML change and grouped the blocks together */
-/* adjusted . to # for social-media-marketing according to HTML change and grouped the blocks together */
-/* collated id blocks to the content class so that it is less repetitive  */
-.content {
+.content { /* Each section style - initially changes . to # for each section but then collated id blocks to the content class so that it is less repetitive */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -93,6 +81,7 @@ main {
     float: right;
     margin-left: 25px;
 }
+
 .content h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -102,9 +91,7 @@ p {
     font-size: 16px;
 }
 
-/* Aside bar style */
-/* changed .benefits to aside */
-aside {
+aside { /* Aside bar style - changed .benefits to aside */
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -115,14 +102,11 @@ aside {
     background-color: #2589bd;
 }
 
-/* Each section in aside bar style */
-/* classes benefit-lead, brand and cost all have the same properties, so condense into a single block of CSS code for each of the general paragraph, h3 and img */
-.benefit {
+.benefit { /* Each section in aside bar style - classes benefit-lead, brand and cost all have the same properties, so condense into a single block of CSS code for each of the general paragraph, h3 and img */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* benefit-lead */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -134,16 +118,13 @@ aside {
     max-width: 150px;
 }
 
-/* Footer style */
-/* remove class selector from footer */
-footer {
+footer { /* Footer style - remove class selector from footer */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-/* change h2 element to match strong element in html file */
-footer strong {
+footer strong { /* change h2 element to match strong element in html file */
     font-size: 20px;
 }

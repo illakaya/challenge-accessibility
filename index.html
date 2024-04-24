@@ -1,122 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Horiseon Social Solution Services</title> <!-- Changed the title from just website to a longer descriptive title as it increases the pages search results -->
+    </head>
+    <body>
+        <header> <!-- change div element to header semantic element and removed class="header" -->
+            <h1>Hori<span class="seo">seo</span>n</h1> <!-- change element later as it broke the page, adjust css file in next commit -->
+            <nav> <!-- change div element to nav -->
+                <ul>
+                    <li>
+                        <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    </li>
+                    <li>
+                        <a href="#online-reputation-management">Online Reputation Management</a>
+                    </li>
+                    <li>
+                        <a href="#social-media-marketing">Social Media Marketing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Changed the title from just website to a longer descriptive title as it increases the pages search results -->
-    <title>Horiseon Social Solution Services</title>
-</head>
+        <img src="./assets/images/digital-marketing-meeting.jpg" class="hero" alt="Employees engaged in a digital marketing meeting"/> <!-- matched class hero to css section, change the div element to img and connect to src and added alternative information describing the image for screen readers -->
+        
+        <main> <!-- change div element to main semantic element and removed class="content" -->
+            <section id="search-engine-optimization" class="content"> <!-- change div element to section semantic element, changed class to id so that when clicking on the nav bar for search engine optimization, it navigates to this section and added back in the class="content" -->
+                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="a notebook with a mind map on search engine optimization"/> <!-- add alternative information describing the image for screen readers -->
+                <h2>Search Engine Optimization</h2>
+                <p>
+                    The dominance of mobile internet use means that users are searching for the right business as they
+                    travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
+                    your visibility and find the right customers for your business.
+                </p>
+            </section>
+            
+            <section id="online-reputation-management" class="content"> <!-- change div element to section semantic element, removed class because id is enough added back in the class="content" as id was removed from css -->
+                <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="a laptop with data and graphs on online reputation"/> <!-- add alternative information describing the image for screen readers -->
+                <h2>Online Reputation Management</h2>
+                <p>
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an
+                    internet connection to say whatever they want about your business. Online Reputation Management
+                    gives you the control over what potential customers see when they search for your business.
+                </p>
+            </section>
+            
+            <section id="social-media-marketing" class="content"> <!-- change div element to section semantic element, removed class because id is enough and added back in the class="content" as id was removed from css -->
+                <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="meeting about social media terms and icons"/> <!-- add alternative information describing the image for screen readers -->
+                <h2>Social Media Marketing</h2>
+                <p>
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps
+                    you determine which platforms are suited to your brand, using analytics to find the right markets
+                    and increase your lead generation.
+                </p>
+            </section>
+        </main>
 
-<body>
-    <!-- change div element to header semantic element -->
-    <!-- removed class="header" -->
-    <header>
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <!-- change element later as it broke the page, adjust css file in next commit -->
-        <!-- change div element to nav -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
-                </li>
-                <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
-                </li>
-                <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <aside> <!-- change div element to aside semantic element and removed class="benefits" -->
+            <div class="benefit"> <!-- simplified class from benefit-lead to just benefit -->
+                <h3>Lead Generation</h3>
+                <img src="./assets/images/lead-generation.png" alt="icon with a gear funnelling into income" /> <!-- add alternative information describing the image for screen readers -->
+                <p>
+                    Inbound strategies for lead generation require less work for your business, bringing customers
+                    directly to your website.
+                </p>
+            </div>
 
-    <!-- matched class hero to css section, change the div element to img and connect to src -->
-    <!-- add alternative information describing the image for screen readers -->
-    <img src="./assets/images/digital-marketing-meeting.jpg" class="hero" alt="Employees engaged in a digital marketing meeting">
-    
-    <!-- change div element to main semantic element -->
-    <!-- removed class="content" -->
-    <main>
-        <!-- change div element to section semantic element -->
-        <!-- changed class to id so that when clicking on the nav bar for search engine optimization, it navigates to this section -->
-        <!-- added back in the class="content" -->
-        <section id="search-engine-optimization" class="content">
-            <!-- add alternative information describing the image for screen readers -->
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="a notebook with a mind map on search engine optimization"/>
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </section>
+            <div class="benefit"> <!-- simplified class from benefit-brand to just benefit -->
+                <h3>Brand Awareness</h3>
+                <img src="./assets/images/brand-awareness.png" alt="icon of a user receiving information about the brand"/> <!-- add alternative information describing the image for screen readers -->
+                <p>
+                    Users find your business through paid and organic searches, increasing the search ranking and
+                    visibility for your business.
+                </p>
+            </div>
 
-        <!-- change div element to section semantic element -->
-        <!-- removed class because id is enough -->
-        <!-- added back in the class="content as id was removed from css" -->
-        <section id="online-reputation-management" class="content">
-            <!-- add alternative information describing the image for screen readers -->
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="a laptop with data and graphs on online reputation"/>
-            <h2>Online Reputation Management</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </section>
-
-        <!-- change div element to section semantic element -->
-        <!-- removed class because id is enough -->
-        <!-- added back in the class="content as id was removed from css" -->
-        <section id="social-media-marketing" class="content">
-            <!-- add alternative information describing the image for screen readers -->
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="meeting about social media terms and icons"/>
-            <h2>Social Media Marketing</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </section>
-    </main>
-
-    <!-- change div element to aside semantic element -->
-    <!-- removed class="benefits" -->
-    <aside>
-        <!-- simplified class from benefit-lead to just benefit -->
-        <div class="benefit">
-            <h3>Lead Generation</h3>
-            <!-- add alternative information describing the image for screen readers -->
-            <img src="./assets/images/lead-generation.png" alt="icon with a gear funnelling into income"/>
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-
-        <!-- simplified class from benefit-brand to just benefit -->
-        <div class="benefit">
-            <h3>Brand Awareness</h3>
-            <!-- add alternative information describing the image for screen readers -->
-            <img src="./assets/images/brand-awareness.png" alt="icon of a user receiving information about the brand"/>
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-
-        <!-- simplified class from benefit-cost to just benefit -->
-        <div class="benefit">
-            <h3>Cost Management</h3>
-            <!-- add alternative information describing the image for screen readers -->
-            <img src="./assets/images/cost-management.png" alt="icon of a gear with cost and income management"/>
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
-    </aside>
-
-    <!-- change div element to footer semantic element -->
-    <!-- removed class="footer" -->
-    <footer>
-        <!-- not a header so change to strong element -->
-        <strong>Made with ❤️️ by Horiseon</strong>
-        <p>
-            &copy; 2024 Horiseon Social Solution Services, Inc.
-        </p>
-    </footer>
-</body>
-
+            <div class="benefit"> <!-- simplified class from benefit-cost to just benefit -->
+                <h3>Cost Management</h3>
+                <img src="./assets/images/cost-management.png" alt="icon of a gear with cost and income management"/> <!-- add alternative information describing the image for screen readers -->
+                <p>
+                    As the search ranking for your business increases, your advertising costs decrease, and you no
+                    longer need to advertise your page.
+                </p>
+            </div>
+        </aside>
+        
+        <footer> <!-- change div element to footer semantic element and removed class="footer" -->
+            <strong>Made with ❤️️ by Horiseon</strong> <!-- not a header so change to strong element -->
+            <p>&copy; 2024 Horiseon Social Solution Services, Inc.</p>
+        </footer>
+    </body>
 </html>
